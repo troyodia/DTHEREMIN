@@ -1,0 +1,7 @@
+#build dir
+/build
+
+.settings/
+.vscode/
+.project
+.cproject

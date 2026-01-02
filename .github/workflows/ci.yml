@@ -1,0 +1,15 @@
+on: push
+jobs:
+  build-and_static_analysis:
+    runs-on: ubuntu-latest
+    container:
+      image: troyodia/gcc-arm-none-eabi-10.3:latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+        with:
+          submodules: "true"
+      - run: make format
+      - run: make cppcheck
+      - run: GCC_PATH=/home/stm32/dev/tools/gcc-arm-none-eabi-10.3-2021.10/bin make
+      - run: GCC_PATH=/home/stm32/dev/tools/gcc-arm-none-eabi-10.3-2021.10/bin git update-index --chmod=+x tools/build_test.sh
