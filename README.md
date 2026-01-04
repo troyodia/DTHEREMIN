@@ -2,7 +2,7 @@
 
 This project is an STM32 based digital musical theremin, that produces musical tones by translating human hand distance to sound pitch and volume. The project makes use of two Infared sensors to capture hand movement, which is then translated to musical sound, using a DSP algorithm in code.
 
-![alt text](images/theremin1.png)
+![alt text](images/theremin1.pg)
 _Mechanical design created by a collaborator_
 
 ## Features
