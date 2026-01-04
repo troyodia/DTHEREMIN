@@ -55,5 +55,5 @@ GCC_PATH=C:/gcc-arm-none-eabi/bin make addr2line ADDR=0x8001350
 
 ## Electrical Schematics
 
-![alt text](images/theremin_schamtic.png)
+![alt text](images/theremin_schamtic.pn)
 _Schematic drawing drafted by a collaborator based on my circuit design_
